@@ -1,5 +1,7 @@
 class Prototype < ApplicationRecord
-  validates :image, presence: true
+  validates :title, presence: true
+  validates :catch_copy, presence: true
+  validates :concept, presence: true
   #devise :database_authenticatable, :registerable,
          #:recoverable, :rememberable, :validatable
 
