@@ -15,10 +15,10 @@ class PrototypesController < ApplicationController
     if @prototype.save
       redirect_to prototype_path(@prototype)
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
-
+  
   def show
     @prototype = Prototype.find(params[:id])
     @comment = Comment.new
