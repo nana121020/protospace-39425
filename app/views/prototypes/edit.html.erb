@@ -1,5 +1,6 @@
 <div class="main">
   <div class="inner">
+  <% if user_signed_in? %> <!-- ログインしているユーザーのみ表示 -->
     <div class="form__wrapper">
       <h2 class="page-heading">プロトタイプ編集</h2>
       <%# 部分テンプレートでフォームを表示する %>
